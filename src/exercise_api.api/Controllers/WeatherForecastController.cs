@@ -22,7 +22,7 @@ public class WeatherForecastController : ControllerBase
     [Route("current")]
     public IEnumerable<WeatherForecast> Get()
     {
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+        return Enumerable.Range(1, 6).Select(index => new WeatherForecast
         {
             Date = DateTime.Now.AddDays(index),
             TemperatureC = Random.Shared.Next(-20, 55),
